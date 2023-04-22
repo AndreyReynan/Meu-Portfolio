@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141429;
+    position: relative;
+}
+body::-webkit-scrollbar{
+    width: 15px;
+}
+body::-webkit-scrollbar-track{
+    opacity: 0;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 20px;
+}
+.cabecalho{
+    width: 100%;
+    height: 60px;
+    background-color: #08091f;
+    position: fixed;
+    z-index: 10;
+}
+.logo{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+.logo h1{
+    font-size: 45px;
+    font-family: 'Rubik Vinyl', cursive;
+    color: #f0001c;
+    cursor: pointer;
+}
+.links{
+    position: absolute;
+    right: 20%;
+    line-height: 60px;
+}
+.links a{
+    text-decoration: none;
+    color: #f0001c;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px;
+    transition: 0.7s;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.home{
+    width: 100%;
+    height: 725px;
+    position: relative;
+}
+.home .ola{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    left: 12%;
+    top: 30%;
+}
+.home .ola h1, p{
+    margin: 15px;
+}
+.home .ola h1{
+    color: #f0001c;
+    font-size: 50px;
+}
+.home-imgs{
+    position: absolute;
+    right: 140px;
+    top: 20%;
+    width: 550px;
+    height: 450px;
+}
+.html{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 250px;
+    top: 0;
+    animation: html-animation 7s infinite ease-in-out;
+}
+.css{
+    width: 250px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    animation: html-animation 7s infinite ease-in-out;
+}
+.js{
+    width: 200px;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 180px;
+    animation: js-animation 7s infinite ease-in-out;
+}
+@keyframes html-animation{
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 45%;
+    }
+    100%{
+        top: 0;
+    }
+}
+@keyframes js-animation{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 55%;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.sobre{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #0a0a21;
+}
+.info{
+    width: 50%;
+    position: absolute;
+    top: 70px;
+}
+.info p, h1{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+}
+.info h1{
+    font-size: 40px;
+}
+.habilidades{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.habilidades .habilidadesboxes{
+    position: absolute;
+    top:13%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.habilidades .habilidadesboxes .habilidadesbox{
+    background-color: #1d1d36;
+    width: 260px;
+    height: 190px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: arial;
+    position: relative;
+    border-radius: 10px;
+    border-right: 6px solid rgba(0, 0, 0, 0.459);
+    border-bottom: 6px solid rgba(0, 0, 0, 0.459);
+}
+.habilidades .habilidadesboxes .habilidadesbox .conhecimento{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    font-size: 17px;
+}
+.habilidades .habilidadesboxes .habilidadesbox .linguagem{
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+.projetos{
+    width: 100%;
+    height: 700px;
+    background-color: #0a0a21;
+    position: relative;
+}
+.box{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    
+}
+.box1{
+    background-color: #1d1d36;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 430px;
+    overflow: hidden;
+    margin-left: 45px;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+.box1 img{
+    width: 400px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.box a{
+    text-decoration: none;
+}
+.box1 a button{
+    background-color: white;
+    color: #f0001c;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin-left: 25%;
+    text-decoration: none;
+    display: none;
+}
+.redes{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+#home1{
+    transition: 0.7s;
+}
+#sobre1{
+    transition: 0.7s;
+}
+#habilidades1{
+    transition: 0.7s;
+}
+#projetos1{
+    transition: 0.7s;
+}
